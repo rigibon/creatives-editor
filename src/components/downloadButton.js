@@ -5,7 +5,7 @@ import { DownloadOutlined } from "@ant-design/icons";
 const DownloadButton = ({ dimensions, props, templateName, fileName }) => {
 	const [extension, setExtension] = useState(".html");
 
-	const apiUrl = process.env.NODE_ENV === "production" ? process.env.REACT_APP_API_PROD : process.env.REACT_APP_API_DEV;
+	const apiUrl = "http://localhost:5500";
 
 	const handleDownload = async () => {
 		try {
