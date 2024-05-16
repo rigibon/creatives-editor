@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02</title>
+    <style>
+        body,
+        table,
+        thead,
+        tbody,
+        tr,
+        td,
+        img {
+            padding: 0;
+            margin: 0;
+            border: none;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            vertical-align: top;
+        }
+
+        .wrapper {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a {
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+            font-family: Verdana, "Arial", sans-serif;
+            color: #17191c;
+        }
+
+        .logo {
+            margin-top: 20px;
+        }
+
+        .intro {
+            font-size: 34px;
+            color: #1d1d1d;
+            max-width: 65%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .feature-img {
+        }
+
+        .feature-para {
+            font-size: 20px;
+            margin-top: 20px;
+            max-width: 90%;
+        }
+
+        .feature-para-2 {
+            font-size: 18px;
+            font-family: Verdana, "Arial", sans-serif;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+
+        .cta {
+            background-color: #0071E3;
+            padding: 16px 40px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-size: 12px;
+            max-width: 85%;
+            margin-bottom: 20px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .wrapper .section {
+                width: 100%;
+            }
+
+            .wrapper .column {
+                width: 100%;
+                display: block;
+            }
+
+            .intro {
+                font-size: 26px;
+                max-width: 80%;
+            }
+
+            .feature-para {
+                font-size: 18px;
+            }
+
+            .feature-para-2 {
+                font-size: 15px;
+                max-width: 80%;
+            }
+
+            .desc {
+                max-width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #efefef;padding-top:30px;">
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td class="wrapper" width="550" align="center">
+                    <table width="550" class="section header" bgcolor="#fff" align="center"
+                        style="border-top: 1px solid #f0f0f0; background-color: {{mainColor}}">
+                        <tbody>
+                            <tr>
+                                <td align="center">
+                                    <img border="0" src={{logoImg}} style="width: {{logoImgSize}}" alt="" class="logo">
+                                    <p class="intro"style="color: {{colorText}}">{{title}}</p>
+                                    <img border="0" src={{productImg}} style="top: 20px; width: {{productImgSize}}" class="feature-img">
+                                    <p class="feature-para" style="color: {{colorText}}">
+                                        {{!-- <div style="color: {{colorText}}"> --}}
+                                            {{text01}}
+                                        {{!-- </div> --}}
+                                    </p>
+                                    <p class="feature-para-2" style="color: {{colorText}}">
+                                        {{!-- <div style="color: {{colorText}}"> --}}
+                                            {{text03}}
+                                        {{!-- </div> --}}
+                                    </p>
+                                    <a href="" class="cta" style="color: {{textButtonColor}}; background-color: {{buttonColor}}">{{buttonText}}</a>
+                                        <br>
+                                        <br>
+                                    <p class="desc" style="color: {{colorText}}">{{text05}}</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <p style="font-size: 12px; color: #797979; max-width: 550px; line-height: 1.4;margin-top:15px;">{{unsubscribeText}}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

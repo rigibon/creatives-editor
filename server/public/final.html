@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    .main_conteiner {
+        width: 550px;
+        height: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(179deg, rgba(0, 0, 0, 0.00) 38%, #000 71%);
+    }
+    .header {
+        background-color: #FF0000;
+        height: 33px;
+    }
+    .header>h5 {
+        height: 37px;
+        color: white;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;
+        text-align: center;
+    }
+    .product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .product_logo {
+        display: flex;
+        justify-content: center;
+        margin-top: -30px;
+        width: 100%;
+    }
+    .product_logo>img {
+        width: 50%;
+    }
+    .product_text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .product_text>h3 {
+        color: #000;
+        font-family: Roboto;
+        font-size: 35px;
+        font-style: italic;
+        font-weight: 900;
+        line-height: normal;
+        text-align: center;
+        margin-top: -30px;
+    }
+    .product_text>h4 {
+        color: #F00;
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .product_img {
+        margin-top: -20px;
+    }
+    .product_img>img {
+        margin-top: 20px;
+        width: 60%;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .offer_block {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 52.76%);
+    }
+    .button_offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .button_offer>h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: -40px;
+    }
+    .button_text {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .myButton {
+        background-color: #D92C27;
+        border-radius: 0px;
+        border: 1px solid #D92C27;
+        display: inline-block;
+        cursor: pointer;
+        padding: 20px 35px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #2F6627;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 411px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .myButton:hover {
+        background-color: #CC0000;
+    }
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+    @media (min-width: 576px) {
+        .container,
+        .container-sm {
+            max-width: 540px
+        }
+    }
+    @media (min-width: 768px) {
+        .container,
+        .container-md,
+        .container-sm {
+            max-width: 720px
+        }
+    }
+    @media (min-width: 992px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm {
+            max-width: 960px
+        }
+    }
+    @media (min-width: 1200px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1140px
+        }
+    }
+    @media (min-width: 1400px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            max-width: 1320px
+        }
+    }
+    .product_logo {
+        padding-top: 2%;
+    }
+    .product_text {
+        padding-top: 5%;
+    }
+</style>
+<body>
+    <div class="container main_conteiner" id="sized">
+        <div style="background-color: rgb(255, 255, 255); margin-bottom: 25px" class="header">
+            <h5>Het kost je maar een minuut om deze fantastische prijs te ontvangen!</h5>
+        </div>
+        <div class="product" style="padding: 0">
+            <div class="product_logo" style="background-color: rgb(243, 243, 243); margin-bottom: 12px">
+                <img src=https://wukule.celestialiatlas.com/nl-jumair/767723addcbf21abaa3966f6cee23ec3.png?v&#x3D;1&amp;rege&#x3D;ZXlKeWIyOTBJam9pWEM5dWJDMXFkVzFoYVhKY0x5SXNJbVpwYkdVaU9pSXVYQzltYVd4bGMxd3ZhblZ0TG5CdVp5SXNJblI1Y0dVaU9pSnBiV0ZuWlNJc0luWWlPaUl5SW4wPQ&#x3D;&#x3D;aaIiaKjaseS alt="" style="margin-bottom: 12px; width: 71.8%; margin-top: 0px; padding-top:0px">
+            </div>
+            <div class="product_text">
+                <h3 style="color: #000000">Neem een onderzoek en win beloning!</h3>
+                <h4 style="color: rgb(251, 203, 6)">Pittsburgh 225 -stuk gereedschapsset</h4>
+            </div>
+            <div class="product_img" style="width: 69.6%;">
+                <br>
+                <img src=https://wukule.celestialiatlas.com/nl-jumair/e4e1cd3a245b38ee5f278597ba9c2b3c.png?v&#x3D;1&amp;rege&#x3D;ZXlKeWIyOTBJam9pWEM5dWJDMXFkVzFoYVhKY0x5SXNJbVpwYkdVaU9pSXVYQzltYVd4bGMxd3ZjSEp2WkhWamRDNXdibWNpTENKMGVYQmxJam9pYVcxaFoyVWlMQ0oySWpvaU1pSjk&#x3D;aaIiaKjaseS alt="">
+            </div>
+        </div>
+        <div class="offer_block">
+            <div class="button_offer">
+                <br>
+                <h1>Gefeliciteerd!</h1>
+                <p class="button_text">Deel je waardevolle inzichten en win groot! U bent gekozen voor een snel onderzoek naar winkelpromoties bij Harbour Freight Door deel te nemen, zou je kunnen winnen
+                <strong style="color: rgb(251, 203, 6)">Pittsburgh 225 -stuk gereedschapsset</strong>
+                <br />
+                <br />
+                Om te claimen, neem gewoon deze korte enquête in over uw ervaring met Harbour Freight.
+                </p>
+                <div>
+<a href="" class="myButton" style="color: #ffffff; background-color: rgb(251, 203, 6); border-color: rgb(251, 203, 6)">BEGIN NU</a>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <td align="center">
+        <p style="text-align: center; font-family: Arial,Helvetica,sans-serif; font-size: 13px; line-height: 1px; color: #fff; padding: 15px">
+        Als u deze e -mails niet langer wilt ontvangen, kunt u zich afmelden door <a href="" style="color:#666;text-decoration:none;">clicking here.</a>  </p>
+        </td>
+</body>
+</html>

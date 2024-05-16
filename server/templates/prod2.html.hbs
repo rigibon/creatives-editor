@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <style>
+ body,
+ table,
+ thead,
+ tbody,
+ tr,
+ td,
+ img {
+ padding: 0;
+ margin: 0;
+ border: none;
+ border-spacing: 0px;
+ border-collapse: collapse;
+ vertical-align: top;
+ }
+ .wrapper {
+ padding-left: 10px;
+ padding-right: 10px;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ a {
+ margin: 0;
+ padding: 0;
+ padding-bottom: 10px;
+ line-height: 1.2;
+ font-family: "Arial", sans-serif;
+ color: #fff;
+ }
+ .logo-wrap {
+ padding-top: 35px;
+ }
+ .logo {
+ }
+ .intro {
+ font-size: 120px;
+ letter-spacing: -3px;
+ font-weight: bold;
+ padding: 0px;
+ line-height: 1;
+ }
+ .intro-sub{
+ text-transform: uppercase;
+ font-size: 80px;
+ font-weight: bold;
+ color: #1c1e75;
+ -webkit-text-stroke: 2px #fff;
+ line-height: 1;
+ }
+ .intro-para {
+ font-size: 24px;
+ font-weight: bold;
+ }
+ .product-name {
+ width: 80%;
+ font-weight: bold;
+ font-size: 40px;
+ margin: 10px 0px;
+ text-transform: uppercase;
+ }
+ .cta {
+ background-color: #9BF2D1;
+ color: #1C1D75;
+ display: inline-block;
+ min-width: 270px;
+ padding: 16px;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight: bold;
+ font-size: 28px;
+ border-radius: 20px;
+ }
+ .feature-wrap{
+ display: grid;
+ place-items: center;
+background-color: "black";
+ margin-top: 25px;
+ margin-bottom: 100px;
+ }
+ .feature-img {
+ }
+ .cta-para {
+ font-size: 26px;
+ margin-top: -80px;
+ width: 90%;
+ color: #1C1D75;
+ }
+ .cta-2 {
+ margin-top: 20px;
+ margin-bottom: 50px;
+ min-width: 75%;
+ }
+ .feature-para {
+ font-size: 24px;
+ margin-top: 20px;
+ color: #000;
+ margin-bottom: 30px;
+ }
+ .bg-wrap{background-repeat:no-repeat;background-size: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;}
+ @media only screen and (max-width: 480px) {
+ .wrapper .section {
+ width: 100%;
+ }
+ .wrapper .column {
+ width: 100%;
+ display: block;
+ }
+ .logo-wrap {
+ padding-top: 23px;
+ margin-bottom: 60px;
+ }
+ .intro {
+ font-size: 78px;
+ }
+ .intro-sub{
+ font-size: 36px;
+ }
+ .intro-para {
+ font-size: 18px;
+ }
+ .product-name {
+ font-size: 24px;
+ }
+ .cta{
+ font-size: 24px;
+ min-width: 210px;
+ }
+ .feature-wrap{
+ height: 340px;
+ margin-top: 40px;
+ }
+ .feature-img {
+ }
+ .cta-para {
+ font-size: 20px;
+ }
+ .cta-2 {
+ margin-top: 15px;
+ font-size: 18px;
+ }
+ .feature-para {
+ font-size: 17px;
+ margin-top: 30px;
+ }
+ .bg-wrap{background-repeat:no-repeat;background-size: 115%;-webkit-text-size-adjust: 115%;background-position: top center;}
+ }
+ </style>
+ </head>
+ <body style="background-color: #f5f5f5;padding-top:10px;">
+ <table width="100%">
+ <tbody>
+ <tr>
+ <td class="wrapper" width="550" align="center">
+ <table width="550" class="section header" align="center">
+ <tbody>
+ <tr>
+ <td align="center" bgcolor="#fff" data="image_bg" style="background-color: {{mainColor}};">
+ <div class="logo-wrap">
+ <img border="0" src={{logoImg}} alt="logo" class="logo" style="width: {{logoImgSize}}"/>
+ </div>
+ {{!-- <p class="intro">{{text01}}</p> --}}
+ <p class="intro-sub" style="color: {{mainColor}}">{{text02}}</p>
+ <p class="intro-para">{{text03}}</p>
+ <p class="product-name">{{brand}} {{product}}</p>
+ <a style="color: {{mainColor}}, background-color: {{secondaryColor}}" class="cta">{{text04}}</a>
+ <a class="feature-wrap"><img border="0" src={{productImg}} alt="product image" class="feature-img" style="width: {{productImgSize}}"></a>
+ <p class="cta-para" style="color: white">{{text05}} <strong><span style="text-transform: uppercase; color: white;">{{text06}}</span></strong>.<br> 
+<div style="color: white;">{{text07}}</div></p>
+ <a class="cta cta-2" style="color: {{mainColor}}; background-color: {{secondaryColor}}">{{buttonText}}</a>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td height="15" style="line-height: 15px;">&nbsp;</td>
+ </tr>
+ <tr>
+ <td align="center">
+ <p style="font-size: 12px; color: #797979; max-width: 550px; line-height: 1.4;">
+ {{unsubscribeText}}</a></p>
+ </td>
+ </tr>
+ <tr>
+ <td height="35" style="line-height: 35px;">&nbsp;</td>
+ </tr>
+ </tbody>
+ </table>
+ </body>
+</html>
