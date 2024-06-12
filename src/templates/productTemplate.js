@@ -23,6 +23,7 @@ const ProductTemplate = ({
 	buttonText,
 	unsubscribeText,
     color_text_warning_1,
+    height_creative,
 }) => {
 	return (
 		<>
@@ -299,7 +300,7 @@ const ProductTemplate = ({
 				<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&family=Work+Sans:wght@600&display=swap" rel="stylesheet"></link>
 			</style>
 			{/* <body> */}
-			<div className="container main_conteiner">
+			<div style={{height:height_creative}} className="container main_conteiner">
 				<div style={{ backgroundColor: secondaryColor }} className="header">
 					<h5>{creativeTitle}</h5>
 				</div>

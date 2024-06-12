@@ -15,6 +15,7 @@ const templateConfig = [
 			{ type: "color", name: "button_color", value: "#ffffff" },
 			{ type: "image", name: "titleImg", value: "https://devsrv.neptuneads.com/us-harbp/files/logo2.png", size: "100%" },
 			{ type: "image", name: "productImg", value: "https://devsrv.neptuneads.com/us-harbp/files/product.png", size: "100%" },
+			{ type: "text", name: "height_creative", value: "950px" },
 			{ type: "text", name: "product", value: "Pittsburgh 225 Piece Tool Set" },
 			{ type: "text", name: "creativeTitle", value: "It will take you only a minute to receive this fantastic prize!" },
 			{ type: "text", name: "surveyTitle", value: "TAKE SURVEY AND WIN REWARD!" },

@@ -1,376 +1,316 @@
-<!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style>
-      /*STYLE*/
-      img {
-        border: none;
-        -ms-interpolation-mode: bicubic;
-        max-width: 100%; 
-      }
-      body {
-        background-size: cover;
-        font-family: sans-serif;
-        -webkit-font-smoothing: antialiased;
-        font-size: 14px;
-        line-height: 1.4;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
         margin: 0;
         padding: 0;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%; 
-      }
-      table {
-        border-collapse: separate;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-        width: 100%; }
-        table td {
-          font-family: sans-serif;
-          font-size: 14px;
-          vertical-align: top; 
-      }
-
-      .body {
-        background-size: cover;
-        width: 100%; 
-      }
-      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-      .container {
-        display: block;
-        margin: 0 auto !important;
-        /* makes it centered */
-        max-width: 580px;
-        padding: 10px;
-        width: 580px; 
-      }
-      /* This should also be a block element, so that it will fill 100% of the .container */
-      .content {
-        box-sizing: border-box;
-        display: block;
-        margin: 0 auto;
-        max-width: 505px;
-        padding: 30px; 
-        background-color: #fff;
-        background-size: 0%;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        border: 3px solid #000;
-      }
-
-      .main {
-
-        border-radius: 3px;
-        width: 100%; 
-      }
-      .wrapper {
-        box-sizing: border-box;
-        padding: 20px; 
-      }
-      .content-block {
-        padding-bottom: 10px;
-        padding-top: 10px;
-
-      }
-      .footer {
-        clear: both;
-        margin-top: 10px;
-        text-align: center;
-        width: 100%; 
-      }
-        .footer td,
-        .footer p,
-        .footer span,
-        .footer a {
-          color: #999999;
-          font-size: 12px!important;
-          text-align: center; 
-      }
-
-      h1,
-      h2,
-      h3,
-      h4 {
-        color: #000;
-        font-family: sans-serif;
-        font-weight: 400;
-        line-height: 1.4;
-        margin: 0;
-        margin-bottom: 30px; 
-      }
-      h2 {
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: capitalize;
-        margin-bottom: 10px;
-      }
-      p,
-      ul,
-      ol {
-        font-family: sans-serif;
-        font-size: 14px;
-        font-weight: normal;
-        margin: 0;
-        margin-bottom: 15px;
-      }
-        p li,
-        ul li,
-        ol li {
-          list-style-position: inside;
-          margin-left: 5px; 
-      }
-      a {
-        color: #3498db;
-        text-decoration: underline; 
-      }
-
-      .btn {
-        box-sizing: border-box;
-        width: 100%; }
-        .btn > tbody > tr > td {
-          padding-bottom: 15px; }
-        .btn table {
-          width: auto; 
-      }
-        .btn table td {
-          background-color: #ffffff;
-          border-radius: 5px;
-          text-align: center; 
-      }
-        .btn a {
-          background-color: #d4141f;
-          border: solid 0px #9f0000;
-          border-radius: 5px;
-          box-sizing: border-box;
-          color: #fff;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 14px;
-          font-weight: bold;
-          margin: 0;
-          padding: 12px 25px;
-          text-decoration: none;
-          text-transform: capitalize; 
-      }
-      .btn-primary table td {
-          
-      }
-      .btn-primary a {
-        border-color: #3498db;
-        color: #fff;
-      }
-
-
-      .last {
-        margin-bottom: 0; 
-      }
-      .first {
-        margin-top: 0; 
-      }
-      .align-center {
-        text-align: center; 
-      }
-      .align-right {
-        text-align: right; 
-      }
-      .align-left {
-        text-align: left; 
-      }
-      .clear {
-        clear: both; 
-      }
-      .mt0 {
-        margin-top: 0; 
-      }
-      .mb0 {
-        margin-bottom: 0; 
-      }
-      .preheader {
-        color: transparent;
-        display: none;
-        height: 0;
-        max-height: 0;
-        max-width: 0;
-        opacity: 0;
-        overflow: hidden;
-        mso-hide: all;
-        visibility: hidden;
-        width: 0; 
-      }
-      .powered-by a {
-        text-decoration: none; 
-      }
-      .presentation p {
-        text-align: center;
-        font-size: 18px;
-      }
-
-      hr {
         border: 0;
-        border-bottom: 1px solid #f6f6f6;
-        margin: 20px 0; 
-      }
-
-      @media only screen and (max-width: 620px) {
-        table[class=body] h1 {
-          font-size: 28px !important;
-          margin-bottom: 10px !important; 
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    .main_conteiner {
+        width: 550px;
+        height: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(179deg, rgba(0, 0, 0, 0.00) 38%, #000 71%);
+    }
+    .header {
+        background-color: #FF0000;
+        height: 33px;
+    }
+    .header>h5 {
+        height: 37px;
+        color: white;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;
+        text-align: center;
+    }
+    .product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .product_logo {
+        display: flex;
+        justify-content: center;
+        margin-top: -30px;
+        width: 100%;
+    }
+    .product_logo>img {
+        width: 50%;
+    }
+    .product_text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .product_text>h3 {
+        color: #000;
+        font-family: Roboto;
+        font-size: 35px;
+        font-style: italic;
+        font-weight: 900;
+        line-height: normal;
+        text-align: center;
+        margin-top: -30px;
+    }
+    .product_text>h4 {
+        color: #F00;
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .product_img {
+        margin-top: -20px;
+    }
+    .product_img>img {
+        margin-top: 20px;
+        width: 60%;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .offer_block {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 52.76%);
+    }
+    .button_offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .button_offer>h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: -40px;
+    }
+    .button_text {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .myButton {
+        background-color: #D92C27;
+        border-radius: 0px;
+        border: 1px solid #D92C27;
+        display: inline-block;
+        cursor: pointer;
+        padding: 20px 35px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #2F6627;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 411px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .myButton:hover {
+        background-color: #CC0000;
+    }
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+    @media (min-width: 576px) {
+        .container,
+        .container-sm {
+            max-width: 540px
         }
-        table[class=body] p,
-        table[class=body] ul,
-        table[class=body] ol,
-        table[class=body] td,
-        table[class=body] span,
-        table[class=body] a {
-          font-size: 18px; 
+    }
+    @media (min-width: 768px) {
+        .container,
+        .container-md,
+        .container-sm {
+            max-width: 720px
         }
-        table[class=body] .wrapper,
-        table[class=body] .article {
-          padding: 10px !important; 
+    }
+    @media (min-width: 992px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm {
+            max-width: 960px
         }
-        table[class=body] .content {
-          padding: 0 !important; 
+    }
+    @media (min-width: 1200px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1140px
         }
-        table[class=body] .container {
-          padding: 0 !important;
-          width: 100% !important; 
+    }
+    @media (min-width: 1400px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            max-width: 1320px
         }
-        table[class=body] .main {
-          border-left-width: 0 !important;
-          border-radius: 0 !important;
-          border-right-width: 0 !important; 
-        }
-        table[class=body] .btn table {
-          width: 100% !important; 
-        }
-        table[class=body] .btn a {
-          width: 100% !important; 
-        }
-        table[class=body] .img-responsive {
-          height: auto !important;
-          max-width: 100% !important;
-          width: auto !important; 
-        }
-      }
-
-      @media all {
-        .ExternalClass {
-          width: 100%; 
-        }
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-          line-height: 100%; 
-        }
-        .apple-link a {
-          color: inherit !important;
-          font-family: inherit !important;
-          font-size: inherit !important;
-          font-weight: inherit !important;
-          line-height: inherit !important;
-          text-decoration: none !important; 
-        }
-        .btn-primary table td:hover {
-
-        }
-        .btn-primary a:hover {
-
-        }
-        .button_style {
-          background: #fefd02; 
-          background-color:#3498db;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          padding: 15px!important;
-          max-width: 420px;
-          min-width: 140px;
-        }
-      }
-    </style>
-  </head>
-  <body  class="">
-    <span  class="preheader"></span>
-    <table  role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
-      <tr >
-        <td >&nbsp;</td>
-        <td  class="container">
-          <div style="background-color: #FFFFFF;" class="content" style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); max-width: 420px;">
-
-            <!-- START CENTERED WHITE CONTAINER -->
-            <table role="presentation" class="main">
-
-              <!-- START MAIN CONTENT AREA -->
-              <tr>
-                <td style="text-align: center;">
-                  <img style="max-width: 200px; margin-top: 20px;" src="https://686.efuserassets.com/686/offers/13830/c/39621/assets/logo.png">
-                  
-                </td>
-              </tr>
-              <tr>
-                <td class="wrapper">
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-
-                    <tr>
-                      <td class="presentation" style="text-align: center;">
-                        <h2>Jesteś naszym zwycięzcą!</h2>
-                        <img style="max-width: 250px; margin-top: 20px;width:100%" src="https://686.efuserassets.com/686/offers/13830/c/39621/assets/product.png">
-                      
-                        <p><br><font style="color:#FFFFFF; font-weight: bold; font-size: 20px;";>Reward: Karta podarunkowa Walmart 500 $<br></font>
-							          <br>
-                          <font style="color:#235ba9; font-weight: bold; font-size: 16px;">Może obowiązywać opłata za dostawę<br></font>
-                          Numer klienta:
-                        </p>
-                        <p style="color: #FFFFFF"><font style="font-weight: bold; border: none; padding: 10px;  ">#4864370221</font></p><br>
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                          <tbody>
-                            <tr>
-                              <td align="center">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                  <tbody>
-                                    <tr>
-                                      <td > <a href="" style="border-radius: 999px;background-color: #d4141f;color:#FFFFFF;">Kliknij tutaj, aby zgłosić się</a> </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-<td align="center">
-            <p style="text-align: center; font-family: Arial,Helvetica,sans-serif; font-size: 13px; line-height: 1px; color: #000; padding: 50px; margin: -50px">
-                <a href="" style="color:#FFFFFF;text-decoration:none;">Unsubscribe</a></p>
-                </td>
-            <!-- END MAIN CONTENT AREA -->
-            </table>
-            <!-- END CENTERED WHITE CONTAINER -->
-
-            <!-- START FOOTER -->
-            <div class="footer">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="content-block">
-                  
-                  </td>
-                </tr>
-              </table>
+    }
+    .product_logo {
+        padding-top: 2%;
+    }
+    .product_text {
+        padding-top: 5%;
+    }
+</style>
+<body>
+    <div style="height:1100px;" class="container main_conteiner" id="sized">
+        <div style="background-color: rgb(255, 255, 255); margin-bottom: 25px" class="header">
+            <h5>It will take you only a minute to receive this fantastic prize!</h5>
+        </div>
+        <div class="product" style="padding: 0">
+            <div class="product_logo" style="background-color: rgb(229, 32, 55); margin-bottom: 12px">
+                <img src=https://devsrv.neptuneads.com/us-harbp/files/logo2.png alt="" style="margin-bottom: 12px; width: 100%; margin-top: 0px; padding-top:0px">
             </div>
-            <!-- END FOOTER -->
-
-          </div>
+            <div class="product_text">
+                <h3 style="color: #000000">TAKE SURVEY AND WIN REWARD!</h3>
+                <h4 style="color: rgb(229, 32, 55)">Pittsburgh 225 Piece Tool Set</h4>
+            </div>
+            <div class="product_img" style="width: 100%;">
+                <br>
+                <img src=https://devsrv.neptuneads.com/us-harbp/files/product.png alt="">
+            </div>
+        </div>
+        <div class="offer_block">
+            <div class="button_offer">
+                <br>
+                <h1>Congratulations!</h1>
+                <p class="button_text">Share your valuable insights and win big! You&#x27;ve been chosen for a quick survey about store promotions at  Harbor Freight By participating, you could win 
+                <strong style="color: rgb(229, 32, 55)">Pittsburgh 225 Piece Tool Set</strong>
+                <br />
+                <br />
+                To claim, simply take this short survey about your experience with  Harbor Freight.
+                </p>
+                <div>
+<a href="" class="myButton" style="color: #ffffff; background-color: #ffffff; border-color: #ffffff">GET STARTED NOW</a>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <td align="center">
+        <p style="text-align: center; font-family: Arial,Helvetica,sans-serif; font-size: 13px; line-height: 1px; color: #666; padding: 10px">
+        If you no longer wish to receive these emails, you may unsubscribe by clicking here <a href="" style="color:#666;text-decoration:none;"></a>  </p>
         </td>
-        <td>&nbsp;</td>
-      </tr>
-    </table>
-  </body>
+</body>
 </html>
