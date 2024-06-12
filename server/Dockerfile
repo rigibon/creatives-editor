@@ -16,4 +16,4 @@ RUN npm ci
 COPY . .
 RUN chown -R root:root /usr/src/app/public
 
-CMD ["node", "application.js"]
+CMD ["node", "server.js"]

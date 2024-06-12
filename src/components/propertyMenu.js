@@ -40,7 +40,7 @@ const PropertyMenu = ({ props, handleChange, images, colors, onChangeSize }) => 
 		setColorModalVisible(false);
 	};
 
-	const apiUrl = "http://localhost:5500";
+	const apiUrl = process.env.NODE_ENV === "production" ? process.env.REACT_APP_API_PROD : process.env.REACT_APP_API_DEV;
 
 	const handleTabChange = async (e) => {
 		const requestData = {
