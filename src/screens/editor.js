@@ -171,7 +171,7 @@ const Editor = () => {
 
 						<Card bordered={true} style={{ padding: 0, marginBottom: 12, border: "2px solid #bbb" }}>
 							<div style={{ fontSize: 15, marginBottom: 7, fontWeight: "bold" }}>
-								Load assets from URL
+								Load data from URL
 								{urlRequired && <div style={{ color: "#fa2e2a" }}>URL is required</div>}
 							</div>
 							<Space.Compact
