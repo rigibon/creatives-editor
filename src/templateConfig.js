@@ -99,7 +99,7 @@ const templateConfig = [
 			{ type: "color", name: "color_text_button", value: "#FFFFFF" },
 			{ type: "text", name: "border_radius", value: "999px" },
 			{ type: "color", name: "bg_color", value: "#FFFFFF" },
-			{ type: "color", name: "color_text", value: "#FFFFFF" },
+			{ type: "color", name: "color_text", value: "#000" },
 			{ type: "text", name: "code", value: "#4864370221" },
 		],
 		// template: ProductTemplate,
