@@ -176,5 +176,5 @@ function generateHtml(configData, templateFileName) {
 
 const PORT = process.env.PORT || 5500;
 app.listen(PORT, () => {
-	console.log(`Server is running on port ${PORT}`);
+	console.log(`Server running on port ${PORT}`);
 });
