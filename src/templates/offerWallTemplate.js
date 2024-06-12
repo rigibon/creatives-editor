@@ -14,6 +14,7 @@ const OfferWallTemplate = ({
 	text_3,
 	text_buttom,
 	text_warning_1,
+	color_text_warning_1,
 	intro_color,
 }) => {
 	return (
@@ -250,7 +251,7 @@ const OfferWallTemplate = ({
 														<td align="center">
 															<p
 																style={{
-																	color: "#797979",
+																	color: color_text_warning_1,
 																	fontFamily: "Verdana, Arial, sans-serif",
 																	lineHeight: "1.2",
 																	margin: "0",

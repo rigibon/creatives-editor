@@ -10,6 +10,7 @@ import TrackTemplate3 from "../templates/trackTemplate3";
 import ProductTemplate from "../templates/productTemplate";
 import ProductTemplate2 from "../templates/productTemplate2";
 import ProductTemplate3 from "../templates/productTemplate3";
+import ProductTemplate4 from "../templates/productTemplate4";
 import StorageLimitTemplate from "../templates/storageLimitTemplate";
 import SubscriptionTemplate from "../templates/subscriptionTemplate";
 import OfferWallTemplate from "../templates/offerWallTemplate";
@@ -23,6 +24,7 @@ const templates = [
 	ProductTemplate,
 	ProductTemplate2,
 	ProductTemplate3,
+	ProductTemplate4,
 	TrackTemplate,
 	TrackTemplate2,
 	TrackTemplate3,

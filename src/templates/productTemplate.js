@@ -22,6 +22,7 @@ const ProductTemplate = ({
 	claimText,
 	buttonText,
 	unsubscribeText,
+    color_text_warning_1,
 }) => {
 	return (
 		<>
@@ -338,12 +339,12 @@ const ProductTemplate = ({
 					</div>
 				</div>
 			</div>
-			<p style={{ textAlign: "center", fontFamily: "Arial,Helvetica,sans-serif", fontSize: "13px", lineHeight: "1px", color: "#000", padding: "15px" }}>
-				{unsubscribeText}
-				<a href="" style={{ color: "#666", textDecoration: "none" }}>
-					clicking here.
-				</a>{" "}
-			</p>
+            <p style={{ textAlign: "center", fontFamily: "Arial, Helvetica, sans-serif", fontSize: "13px", color: "#000", padding: "15px 10px", maxWidth: "100%", boxSizing: "border-box" }}>
+  {unsubscribeText}
+  <a href="" style={{ color: color_text_warning_1, textDecoration: "none", marginLeft: "5px" }}>
+    clicking here.
+  </a>{" "}
+</p>
 			{/* </body> */}
 		</>
 	);

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <style>
+ body,
+ table,
+ thead,
+ tbody,
+ tr,
+ td,
+ img {
+ padding: 0;
+ margin: 0;
+ border: none;
+ border-spacing: 0px;
+ border-collapse: collapse;
+ vertical-align: top;
+ }
+ .wrapper {
+ padding-left: 10px;
+ padding-right: 10px;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ a {
+ margin: 0;
+ padding: 0;
+ padding-bottom: 10px;
+ line-height: 1.2;
+ font-family: "Arial", sans-serif;
+ color: #8D7156;
+ }
+ .logo-wrap {
+ height: 60px;
+ margin-top: 0px;
+ margin-bottom: 120px;
+ }
+ .logo {
+ max-width: 300px;
+ max-height: 190px;
+ }
+ .wrap{
+ height: 170px;
+ }
+ .title-para {
+ font-size: 26px;
+ padding-bottom: 5px;
+ }
+ .title {
+ font-size: 42px;
+ color: #4B3D30;
+ padding-bottom: 5px;
+ }
+ .cta {
+ font-size: 28px;
+ font-weight: bold;
+ line-height: 1;
+ text-transform: uppercase;
+ background: #737C06;
+ color: #FDF8EC;
+ display: inline-block;
+ min-width: 280px;
+ padding: 20px;
+ text-decoration: none;
+ border-radius: 20px;
+ margin: 20px 0px;
+ }
+ .cta-icon{
+ width: 24px;
+ vertical-align: middle;
+ }
+ .cta-2 {
+ background-color: #7E6C09;
+ min-width: 65%;
+ }
+ .product-image-wrap {
+ display: grid;
+ place-items: center;
+ height: 300px;
+ width: 75%;
+ margin-top: 10px;
+ }
+ .feature-img {
+ margin-top: -40px;
+      width: 90%;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+ }
+ .answer {
+ font-size: 27px;
+ width: 75%;
+ margin-top: 40px;
+ margin-bottom: 5px;
+ }
+ .free{
+ text-transform: uppercase;
+ font-size: 28px;
+ margin-top: 20px;
+ color: #000;
+ margin-bottom: 40px;
+ }
+ .feature-para {
+ font-size: 15px;
+ max-width: 80%;
+ margin-bottom: 30px;
+  color: #000;
+ }
+ .bg-wrap{background-repeat:no-repeat;background-size: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;}
+ @media only screen and (max-width: 480px) {
+ .wrapper .section {
+ width: 100%;
+ }
+ .wrapper .column {
+ width: 100%;
+ display: block;
+ }
+ .logo-wrap {
+ margin-top: 20px;
+ margin-bottom: 20px;
+ }
+ .logo{
+ max-height: 50px;
+ max-width: 190px;
+ }
+ .wrap {
+ height: 140px;
+ }
+ .title-para {
+ font-size: 22px;
+ padding-bottom: 0px;
+ }
+ .title {
+ font-size: 32px;
+ }
+ .product-image-wrap {
+ height: 230px;
+ width: 85%;
+ }
+ .feature-img {
+ max-height: 230px;
+ }
+ .cta {
+ min-width: 250px;
+ padding: 18px;
+ font-size: 23px;
+ margin-top: 10px;
+ margin-bottom: 0px;
+ }
+ .answer {
+ font-size: 20px;
+ margin-top: 10px;
+ margin-bottom: 0;
+ }
+ .free {
+ font-size: 18px;
+ margin-top: 16px;
+ margin-bottom: 30px;
+ }
+ }
+ </style>
+ </head>
+ <body style="background-color: #fff;padding-top:10px;">
+ <table width="100%">
+ <tbody>
+ <tr>
+ <td class="wrapper" width="550" align="center">
+ <table width="550" class="section header" align="center">
+ <tbody>
+ <tr>
+ <td style="background-color: {{bg_color}};color:{{color_text}}" align="center" bgcolor="#fdf8ec" data="image_bg" background="{{bg_image}}" class="bg-wrap">
+ <div class="logo-wrap">
+ <img border="0" src="{{logo}}" alt="logo" class="logo"/>
+ </div>
+ <div class="wrap">
+ <p style="color:{{color_text}}" class="title-para">Your Shot at a</p>
+<p class="title"><span style="color: {{color_text_1}}; font-weight: bold">{{text_1}}</span> {{product_title}}</p> <p class="title-para">{{text_2}} <span style="background-color: {{bg_color_t3}};padding: 5px;">{{text_3}}</span></p>
+ </div>
+ <a style="background-color: {{color_button}}; color:{{color_text_button}};" href="" class="cta"><img border="0" border="0" border="0" border="0" alt="image" src="{{stars_button}}" class="cta-icon"> GET STARTED <img border="0" border="0" border="0" border="0" alt="image" src="{{stars_button}}" class="cta-icon"></a>
+ <div class="product-image-wrap">
+ <img border="0" src="{{product_img}}" alt="product image" class="feature-img"> 
+ </div>
+ <p style="color:{{color_text}}" class="answer">Just answer a few questions,<br>Win a <strong><span style="color: {{color_product_text}}; font-weight: bold">{{product_title}}</strong></span>. It is that Simple! </p>
+ <a href="" style="background-color: {{color_button}}; color:{{color_text_button}};" class="cta cta-2"><img border="0" border="0" border="0" border="0" alt="image" src="{{stars_button}}" class="cta-icon"> GET STARTED <img border="0" border="0" border="0" border="0" alt="image" src="{{stars_button}}" class="cta-icon"></a>
+ <p style="color:{{color_text}}" class="free">No Catch, No Cost.<br>Win in Minutes!</p>
+ <p style="color:{{color_text}}" class="feature-para">You have been chosen to participate in our Loyalty Program for <strong>FREE!</strong> It will take you only a minute to receive this fantastic prize.</p>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td height="15" style="line-height: 15px;">&nbsp;</td>
+ </tr>
+ <tr>
+ <td align="center">
+ <p style="font-size: 11px; color: #797979; max-width: 550px; line-height: 1.4;">
+ If you no longer wish to receive these emails, you may unsubscribe by <a href="https://opt.listarmor.com/unsub/FszpGBqOQMf8rKW7Zb4l526J" style="color:#666;text-decoration:none;">clicking here.</a></p>
+ </td>
+ </tr>
+ <tr>
+ <td height="35" style="line-height: 35px;">&nbsp;</td>
+ </tr>
+ </tbody>
+ </table>
+ </body>
+</html>
