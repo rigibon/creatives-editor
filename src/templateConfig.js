@@ -1,6 +1,7 @@
+let i = 0;
 const templateConfig = [
 	{
-		id: 1 - 1,
+		id: i,
 		name: "prod1",
 		imageSrc: "product.png",
 		type: "Sweeps",
@@ -32,7 +33,7 @@ const templateConfig = [
 		// template: ProductTemplate,
 	},
 	{
-		id: 2 - 1,
+		id: i=i+1,
 		name: "prod2",
 		imageSrc: "prod2.png",
 		type: "Sweeps",
@@ -55,7 +56,7 @@ const templateConfig = [
 		// template: ProductTemplate2,
 	},
 	{
-		id: 3 - 1,
+		id: i=i+1,
 		name: "prod3",
 		imageSrc: "prod3.png",
 		type: "Sweeps",
@@ -82,7 +83,7 @@ const templateConfig = [
 		],
 		// template: ProductTemplate2,
 	},{
-		id: 4 - 1,
+		id: i=i+1,
 		name: "prod4",
 		imageSrc: "prod4.png",
 		type: "Sweeps",
@@ -106,7 +107,31 @@ const templateConfig = [
 		// template: ProductTemplate,
 	},
 	{
-		id: 5 - 1,
+		id: i=i+1,
+		name: "prod5",
+		imageSrc: "prod5.png",
+		type: "Sweeps",
+		props: [
+			{ type: "image", name: "background_image", value: "https://686.efuserassets.com/686/offers/14221/c/41396/assets/bg5.png", size: "100%"},
+			{ type: "color", name: "background_color", value: "#fff"},
+			{ type: "image", name: "logo", value: "https://686.efuserassets.com/686/offers/14221/c/41395/assets/logo.png",size: "100%"},
+			{ type: "color", name: "second_background_color", value: "#fff" },
+			{ type: "text", name: "product_title", value: "BISSELL CrossWave Vacuum Cleaner" },
+			{ type: "image", name: "product_image", value: "https://686.efuserassets.com/686/offers/14221/c/41395/assets/product.png",size: "100%" },
+			{ type: "image", name: "icon1", value: "https://686.efuserassets.com/686/offers/14221/c/41396/assets/icon.png",size: "100%" },
+			{ type: "image", name: "icon2", value: "https://686.efuserassets.com/686/offers/14221/c/41396/assets/time-icon.png",size: "100%"},
+			{ type: "color", name: "color_text_free", value: "rgb(226, 0, 26)"},
+			{ type: "color", name: "button_color_1", value: "#005daa" },
+			{ type: "color", name: "button_color_text_1", value: "#FFFFFF" },
+			{ type: "color", name: "button_color_2", value: "rgb(226, 0, 26)" },
+			{ type: "color", name: "button_color_text_2", value: "#FFFFFF" },
+			{ type: "color", name: "color_text_2", value: "rgb(226, 0, 26)" },
+			{ type: "color", name: "color_warning", value: "#797979" },
+		],
+		// template: ProductTemplate,
+	},
+	{
+		id: i=i+1,
 		name: "track1",
 		imageSrc: "trackntrace.png",
 		type: "Track & Trace",
@@ -125,7 +150,7 @@ const templateConfig = [
 		// template: TrackTemplate,
 	},
 	{
-		id: 6 - 1,
+		id: i=i+1,
 		name: "track2",
 		imageSrc: "trackntrace2.png",
 		type: "Track & Trace",
@@ -156,7 +181,7 @@ const templateConfig = [
 		],
 	},
 	{
-		id: 7 - 1,
+		id: i=i+1,
 		name: "track3",
 		imageSrc: "trackntrace3.png",
 		type: "Track & Trace",
@@ -180,7 +205,7 @@ const templateConfig = [
 		],
 	},
 	{
-		id: 8 - 1,
+		id: i=i+1,
 		name: "offerwall",
 		imageSrc: "offerwall.png",
 		type: "Offer Wall",
@@ -202,7 +227,7 @@ const templateConfig = [
 		// template: OfferWallTemplate,
 	},
 	{
-		id: 9 - 1,
+		id: i=i+1,
 		name: "offerwall2",
 		imageSrc: "offerwall2.png",
 		type: "Offer Wall",
@@ -225,7 +250,7 @@ const templateConfig = [
 		// template: OfferWallTemplate,
 	},
 	{
-		id: 10 - 1,
+		id: i=i+1,
 		name: "strg",
 		imageSrc: "storage.png",
 		type: "Storage Limit",
@@ -251,7 +276,7 @@ const templateConfig = [
 		// template: StorageLimitTemplate,
 	},
 	{
-		id: 11 - 1,
+		id: i=i+1,
 		name: "subs1",
 		imageSrc: "subscription.png",
 		type: "Subscription",
@@ -272,7 +297,7 @@ const templateConfig = [
 		// template: SubscriptionTemplate,
 	},
 	{
-		id: 12 - 1,
+		id: i=i+1,
 		name: "limof",
 		imageSrc: "limof.png",
 		type: "Limited Offer",
