@@ -217,7 +217,7 @@ const templateConfig = [
 			{ type: "color", name: "color_buttom", value: "#007ec7" },
 			{ type: "text", name: "intro", value: "ANSWER & WIN!" },
 			{ type: "text", name: "text_1", value: "Exclusive" },
-			{ type: "text", name: "text_2", value: "$90 REWARDS" },
+			{ type: "text", name: "text_2", value: "$100 REWARDS" },
 			{ type: "text", name: "text_3", value: "You have been chosen to participate in our Loyalty Program for FREE! It will take you only a minute to receive this fantastic prize." },
 			{ type: "text", name: "text_buttom", value: "GET STARTED NOW!" },
 			{ type: "text", name: "text_warning_1", value: "If you no longer wish to receive these emails, you may unsubscribe by clicking here" },

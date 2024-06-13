@@ -1,3 +1,6 @@
+import { AutoComplete } from "antd";
+import { BlockPicker } from "react-color";
+
 const ProductTemplate5 = ({
     background_image,
     background_color,
@@ -238,7 +241,12 @@ const ProductTemplate5 = ({
                         </a>
                         <a href="#">
                           <img
-                            style={{ width: product_imgSize }}
+                            style={{ width: product_imgSize,
+                                     marginTop: -30,
+                                     marginBottom: 20,
+                                     display: BlockPicker,
+                                     marginLeft: AutoComplete,
+                                     marginRight:AutoComplete }}
                             border="0"
                             src={product_image}
                             alt="product image"
