@@ -68,10 +68,10 @@ const Editor = () => {
 
 	const bodyRef = useRef(null);
 
-	const handleBodyRef = (ref) => {
-		const dim = { width: ref.width, height: ref.height };
-		setDimensions(dim);
-	};
+	// const handleBodyRef = (ref) => {
+	// 	const dim = { width: ref.width, height: ref.height };
+	// 	setDimensions(dim);
+	// };
 
 	const override = {
 		display: "block",
@@ -214,7 +214,7 @@ const Editor = () => {
 					</Card>
 				</Col>
 				<Col span={10}>
-					<Preview dimensions={dimensions} passBodyRef={handleBodyRef} props={props} setProps={setProps} templateName={template.name} fileName={fileName} template={templateComponent}></Preview>
+					<Preview dimensions={template.dimensions} props={props} setProps={setProps} templateName={template.name} fileName={fileName} template={templateComponent}></Preview>
 				</Col>
 				<Col span={8}>
 					<PropertyMenu props={props} handleChange={handleChange} images={images} colors={colors} onChangeSize={onChangeSize}></PropertyMenu>

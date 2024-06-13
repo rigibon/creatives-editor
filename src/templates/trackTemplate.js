@@ -1,15 +1,10 @@
 import React, { useEffect } from "react";
 
-const TrackTemplate = ({ mainColor, secondaryColor, logoImg, logoImgSize, productImg, productImgSize, text01, text02, text03, buttonText, unsubscribeText, passBodyRef }) => {
-	useEffect(() => {
-		const dimensions = { width: document.getElementById("main-section").offsetWidth, height: document.getElementById("main-section").offsetHeight };
-		passBodyRef(dimensions);
-	}, []);
-
-	return (
-		<>
-			<style>
-				{`
+const TrackTemplate = ({ mainColor, secondaryColor, logoImg, logoImgSize, productImg, productImgSize, text01, text02, text03, buttonText, unsubscribeText }) => {
+     return (
+          <>
+               <style>
+                    {`
     body,
     table,
     thead,
@@ -158,64 +153,64 @@ const TrackTemplate = ({ mainColor, secondaryColor, logoImg, logoImgSize, produc
     } 
     }
     `}
-			</style>
-			<body style={{ backgroundColor: "#e3e2e2" }}>
-				<table width="100%">
-					<tbody>
-						<tr>
-							<td className="wrapper" align="center" style={{ paddingTop: "30px" }}>
-								<table id="main-section" width="600" className="section" style={{ backgroundColor: mainColor }}>
-									<tr>
-										<td bgcolor="#fff" align="center"></td>
-									</tr>
-									<tr>
-										<td align="center">
-											<table>
-												<tbody>
-													<tr>
-														<td className="column" width="50%" style={{ paddingLeft: "30px" }}>
-															<a href="">
-																<img border="0" src={logoImg} style={{ width: logoImgSize }} alt="logo" className="logo" />{" "}
-															</a>
-															<p className="title-heading">{text01}</p>
-															<p className="title-para-sub">
-																<strong style={{ color: secondaryColor }}>{text02}</strong>
-															</p>
-														</td>
-														<td className="column" width="50%" align="center">
-															<p className="imagef">
-																<img border="0" alt="image" src={productImg} style={{ width: productImgSize }} />
-															</p>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-											<p className="confirm-para">{text03}</p>
-											<a href="" style={{ backgroundColor: secondaryColor }} className="cta">
-												{buttonText} <img border="0" alt="image" src="https://686.efuserassets.com/686/offers/13540/c/38076/assets/cta-icon-1.png" width="22" />
-											</a>
-										</td>
-									</tr>
-								</table>
-								<table id="end" width="600" className="section header" align="center">
-									<tbody>
-										<tr>
-											<td align="center">
-												<p style={{ fontSize: "11px", color: "#797979", maxWidth: "550px", lineHeight: "1.4", padding: "0" }}>{unsubscribeText}</p>
-											</td>
-										</tr>
-										<tr>
-											<td height="35">&nbsp;</td>
-										</tr>
-									</tbody>
-								</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</body>
-		</>
-	);
+               </style>
+               <body style={{ backgroundColor: "#e3e2e2" }}>
+                    <table width="100%">
+                         <tbody>
+                              <tr>
+                                   <td className="wrapper" align="center" style={{ paddingTop: "30px" }}>
+                                        <table id="main-section" width="600" className="section" style={{ backgroundColor: mainColor }}>
+                                             <tr>
+                                                  <td bgcolor="#fff" align="center"></td>
+                                             </tr>
+                                             <tr>
+                                                  <td align="center">
+                                                       <table>
+                                                            <tbody>
+                                                                 <tr>
+                                                                      <td className="column" width="50%" style={{ paddingLeft: "30px" }}>
+                                                                           <a href="">
+                                                                                <img border="0" src={logoImg} style={{ width: logoImgSize }} alt="logo" className="logo" />{" "}
+                                                                           </a>
+                                                                           <p className="title-heading">{text01}</p>
+                                                                           <p className="title-para-sub">
+                                                                                <strong style={{ color: secondaryColor }}>{text02}</strong>
+                                                                           </p>
+                                                                      </td>
+                                                                      <td className="column" width="50%" align="center">
+                                                                           <p className="imagef">
+                                                                                <img border="0" alt="image" src={productImg} style={{ width: productImgSize }} />
+                                                                           </p>
+                                                                      </td>
+                                                                 </tr>
+                                                            </tbody>
+                                                       </table>
+                                                       <p className="confirm-para">{text03}</p>
+                                                       <a href="" style={{ backgroundColor: secondaryColor }} className="cta">
+                                                            {buttonText} <img border="0" alt="image" src="https://686.efuserassets.com/686/offers/13540/c/38076/assets/cta-icon-1.png" width="22" />
+                                                       </a>
+                                                  </td>
+                                             </tr>
+                                        </table>
+                                        <table id="end" width="600" className="section header" align="center">
+                                             <tbody>
+                                                  <tr>
+                                                       <td align="center">
+                                                            <p style={{ fontSize: "11px", color: "#797979", maxWidth: "550px", lineHeight: "1.4", padding: "0" }}>{unsubscribeText}</p>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td height="35">&nbsp;</td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </td>
+                              </tr>
+                         </tbody>
+                    </table>
+               </body>
+          </>
+     );
 };
 
 export default TrackTemplate;

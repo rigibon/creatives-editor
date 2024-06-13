@@ -3,7 +3,7 @@ import { Card } from "antd";
 import TranslateButton from "./translateButton";
 import DownloadButton from "./downloadButton";
 
-const Preview = ({ dimensions, passBodyRef, props, setProps, templateName, fileName, template }) => {
+const Preview = ({ dimensions, props, setProps, templateName, fileName, template }) => {
 	const jsonObject = {};
 
 	props.forEach((property) => {
@@ -13,8 +13,6 @@ const Preview = ({ dimensions, passBodyRef, props, setProps, templateName, fileN
 			jsonObject[property.name + "Size"] = property.size;
 		}
 	});
-
-	jsonObject["passBodyRef"] = passBodyRef;
 
 	return (
 		<Card

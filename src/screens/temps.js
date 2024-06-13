@@ -35,10 +35,10 @@ const Templates = () => {
 
 	return (
 		<div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
-			<Card title="Templates" style={{ width: 800, height: 380 }}>
+			<Card title="Templates" style={{ width: 800 }}>
 				<Tabs>
 					{categories.map((category) => (
-						<TabPane tab={category.name} key={category.id}>
+						<TabPane tab={category.name} key={category.id} style={{ maxHeight: "300px", overflowY: "scroll" }}>
 							<div style={{ display: "flex", justifyContent: "space-between" }}>
 								<Row gutter={28}>
 									{templateConfig
@@ -56,7 +56,7 @@ const Templates = () => {
 					))}
 				</Tabs>
 			</Card>
-		</div>
+		</div >
 	);
 };
 
