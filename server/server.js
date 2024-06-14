@@ -8,6 +8,7 @@ const translate = require("google-translate-api-x");
 const path = require("path");
 const express = require("express");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
+const cheerio = require("cheerio");
 
 puppeteer.use(StealthPlugin());
 
@@ -25,7 +26,8 @@ let browserInstance;
 async function initPuppeteer() {
 	browserInstance = await puppeteer.launch({
 		executablePath: process.env.NODE_ENV === "production" ? process.env.PUPPETEER_EXECUTABLE_PATH : puppeteer.executablePath(),
-		args: ["--disable-setuid-sandbox", "--no-sandbox", "--no-zygote"],
+		args: ["--disable-setuid-sandbox", "--no-sandbox", "--no-zygote", "--enable-chrome-browser-cloud-management"],
+		dumpio: true
 	});
 }
 
@@ -44,7 +46,7 @@ app.post("/download", async (req, res) => {
 		await initPuppeteer();
 	}
 
-	const { dimensions, props, templateFileName, extension } = req.body;
+	const { props, templateFileName, extension } = req.body;
 
 	const jsonObject = {};
 
@@ -75,13 +77,43 @@ app.post("/download", async (req, res) => {
 		const filePath = path.resolve(__dirname, "public", "final.html");
 		await page.goto(`file://${filePath}`);
 
-		await page.setViewport({
-			width: dimensions.height,
-			height: dimensions.width,
+		const dimensions = await page.evaluate(() => {
+			const element = document.querySelector('.creative');
+			if (element) {
+				return { width: element.offsetWidth, height: element.offsetHeight }; // Return the width of the element
+			} else {
+				return null; // Return null if the element is not found
+			}
 		});
 
-		await page.screenshot({ path: pngPath, fullPage: true });
-		await page.close();
+		console.log("Width of element with class 'section header':", dimensions);
+
+		await page.setViewport({
+			width: 2500,
+			height: 2500,
+		});
+
+		const $ = cheerio.load(finalHtml);
+
+
+
+		// const width = parseInt($('.section.header').attr('style').match(/width:\s*(\d+)px/)[1]);
+		// console.log(finalHtml);
+		// const width = $('.section.header').width();
+		const viewport = await page.viewport();
+		const centerX = Math.round(viewport.width / 2);
+		const centerY = Math.round(viewport.height / 2);
+		const regionWidth = dimensions.width;
+		const regionHeight = dimensions.height;
+		const clip = {
+			x: Math.round(centerX - regionWidth / 2),
+			y: 0,
+			width: regionWidth,
+			height: regionHeight
+		};
+
+		await page.screenshot({ path: pngPath, clip });
+		// await page.close();
 		res.download(pngPath, "final.png", (err) => {
 			if (err) {
 				console.error("Error downloading file:", err);
