@@ -205,30 +205,38 @@
  <tr>
  <td align="center" bgcolor="#ffffff">
      
-<img border="0" src="{{logo}}" alt="logo" class="logo" />
+<img style="width:{{logoSize}}" border="0" src="{{logo}}" alt="logo" class="logo" />
  </td>
  </tr>
  <tr>
  <td align="center" bgcolor="{{background_color}}" background="{{background_img}}" class="bg-wrap">
  
  <div class="wrap">
-<p class="feature-title">Dear {{brand}} Shopper,<br /><br />We value your opinion and want to improve your experience. Help us serve you better by taking a quick <strong>2-minute</strong> survey, and you could be in with a chance of winning a fantastic prize!<br><br>
+<p style="color:{{color_text}}" class="feature-title">Dear {{brand}} Shopper,<br /><br />We value your opinion and want to improve your experience. Help us serve you better by taking a quick <strong>2-minute</strong> survey, and you could be in with a chance of winning a fantastic prize!<br><br>
 
 As a token of our appreciation, we are offering you the unique opportunity to receive a <span style="color: {{color_product_title}};"><strong>{{product_title}}</strong></span>!<br><br>
 
 To enter, simply complete this short survey about your experience with {{brand}}.<br><br>
 
 Thank you in advance for your time and feedback.</p>
- <a style="background-color: {{color_button}};color:{{color_button_text}};" href="" class="cta">GET STARTED NOW <img border="0" alt="image" src="" class="cta-icon"></a>
+ <a style="background-color: {{color_button}};color:{{color_button_text}};" href="" class="cta">GET STARTED NOW</a>
  </div>
  <div class="product-wrap">
- <p class="product-name">
- <span class="claim">{{product_lema}}
+<p style="color: {{color_text}}; max-width: 300px; font-size: 23px;
+ font-weight: bold;
+ display: inline-block;
+ margin-top: 75px;"  className="product-name">
+    <span style="color:{{color_lema_text}};
+                        margin-top: -20px;
+                        font-weight: 600;
+                        font-size: 20px;
+                        letter-spacing: 0px;
+                        margin-bottom: 5px;
+                        display: block;" className="claim">{{product_lema}}</span>
+    {{product_title}}
+</p>
 
-</span>
-{{product_title}}
- </p>
- <img border="0" src="{{product_img}}" alt="product image" class="feature-img"> 
+ <img style="width:{{product_imgSize}}" border="0" src="{{product_img}}" alt="product image" class="feature-img"> 
  </div>
 <br><br>
  </td>
@@ -242,8 +250,8 @@ Thank you in advance for your time and feedback.</p>
  </tr>
  <tr>
  <td align="center">
- <p style="font-size: 12px; color: #797979; max-width: 548px; line-height: 1.4;">
- If you no longer wish to receive these emails, you may unsubscribe by <a href="" style="color:#666;text-decoration:none;">clicking here.</a></p>
+ <p style="font-size: 12px; color: {{color_warning}}; max-width: 548px; line-height: 1.4;">
+ If you no longer wish to receive these emails, you may unsubscribe by <a href="" style="color:{{color_warning}};text-decoration:none;">clicking here.</a></p>
  </td>
  </tr>
  <tr>
