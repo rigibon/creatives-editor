@@ -167,7 +167,7 @@ const templateConfig = [
 			{ type: "text", name: "text_3", value: "Are You In?"},
 			{ type: "color", name: "bg_color_t3", value: "#E3CDB9" },
 			{ type: "color", name: "color_product_text", value: "#ff0015" },
-			{ type: "image", name: "logo", value: "https://cdn.freebiesupply.com/logos/large/2x/lowes-5-logo-png-transparent.png", size: "100%" },
+			{ type: "image", name: "logo", value: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkVKsrLJavL1kKIZjhSBK-r7Ir_ZEfcKnxQg&s", size: "100%" },
 			{ type: "image", name: "bg_image", value: "https://686.efuserassets.com/686/offers/14222/c/41400/assets/b4.png", size: "100%"},
 			{ type: "color", name: "bg_color_t3", value: "#fff" },
 			{ type: "image", name: "product_img", value: "https://686.efuserassets.com/686/offers/14222/c/41400/assets/product.png", size: "100%" },
