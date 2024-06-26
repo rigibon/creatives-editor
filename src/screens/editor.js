@@ -13,6 +13,7 @@ import ProductTemplate3 from "../templates/productTemplate3";
 import ProductTemplate4 from "../templates/productTemplate4";
 import ProductTemplate5 from "../templates/productTemplate5";
 import ProductTemplate6 from "../templates/productTemplate6";
+import ProductTemplate7 from "../templates/productTemplate7";
 import StorageLimitTemplate from "../templates/storageLimitTemplate";
 import SubscriptionTemplate from "../templates/subscriptionTemplate";
 import OfferWallTemplate from "../templates/offerWallTemplate";
@@ -29,6 +30,7 @@ const templates = [
 	ProductTemplate4,
 	ProductTemplate5,
 	ProductTemplate6,
+	ProductTemplate7,
 	TrackTemplate,
 	TrackTemplate2,
 	TrackTemplate3,
